@@ -149,3 +149,169 @@ body {
   background-color: #0a1a2f;
   color: white;
 }
+
+
+
+javascript
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    document
+      .querySelector(link.getAttribute("href"))
+      ?.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+
+pages 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hardware & Arduino | YIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Young Innovators Network</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="web.html">Web Dev</a></li>
+        <li><a href="rocketry.html">Rocketry</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1>Hardware & Arduino Engineering</h1>
+      <p>Build real electronics through hands-on engineering projects.</p>
+    </header>
+
+    <section class="section white">
+      <h2>Course Overview</h2>
+      <p>
+        Students learn circuits, sensors, actuators, and Arduino programming
+        while building functional devices and real-world systems.
+      </p>
+
+      <img
+        class="page-image"
+        src="https://images.unsplash.com/photo-1581092334494-1c6c5e5f5d88"
+      />
+    </section>
+
+    <section class="section navy">
+      <h2>Course Pace</h2>
+      <ul>
+        <li>8-week program</li>
+        <li>2 classes per week</li>
+        <li>1 hour per session</li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Development | YIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Young Innovators Network</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rocketry.html">Rocketry</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1>Web Development Program</h1>
+      <p>Learn how developers design, build, and think.</p>
+    </header>
+
+    <section class="section white">
+      <h2>Course Overview</h2>
+      <p>
+        This program introduces students to HTML, CSS, and JavaScript through
+        hands-on, sandbox-based projects that progress from simple layouts to
+        interactive pages.
+      </p>
+
+      <img
+        class="page-image"
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+      />
+    </section>
+
+    <section class="section navy">
+      <h2>Course Pace</h2>
+      <ul>
+        <li>4-week program</li>
+        <li>2 classes per week</li>
+        <li>1 hour per session</li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rocketry | YIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Young Innovators Network</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="web.html">Web Dev</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1>Rocketry & Aerospace</h1>
+      <p>Explore the science of flight through engineering and design.</p>
+    </header>
+
+    <section class="section white">
+      <h2>Course Overview</h2>
+      <p>
+        Students explore aerodynamics, propulsion, stability, and flight
+        simulation through collaborative rocket design and OpenRocket software.
+      </p>
+
+      <img
+        class="page-image"
+        src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
+      />
+    </section>
+
+    <section class="section navy">
+      <h2>Course Pace</h2>
+      <ul>
+        <li>6-week program</li>
+        <li>2 classes per week</li>
+        <li>1 hour per session</li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
