@@ -47,3 +47,105 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+CSS
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.white-section {
+  background-color: white;
+  color: #0a1a2f;
+}
+
+.navy-section {
+  background-color: #0a1a2f;
+  color: white;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #0a1a2f;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* PROGRAM GRID */
+.program-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.program-card {
+  width: 260px;
+  position: relative;
+  cursor: pointer;
+}
+
+.program-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.program-desc {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.program-card:hover .program-desc {
+  opacity: 1;
+}
+
+/* FORMS */
+.form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.form button {
+  padding: 12px;
+  background-color: #0a1a2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0a1a2f;
+  color: white;
+}
